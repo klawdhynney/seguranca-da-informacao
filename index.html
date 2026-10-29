@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Segurança da Informação e Boas Práticas no Trabalho</title>
+  <meta name="description" content="Apresentação executiva e interativa sobre Segurança da Informação e Boas Práticas no Ambiente de Trabalho.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de Progresso Superior -->
+  <div id="top-progress-bar"></div>
+
+  <!-- Cabeçalho Fixo Superior -->
+  <header class="top-header">
+    <div class="brand-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+      <span>CYBERSEC • CONSCIENTIZAÇÃO CORPORATIVA</span>
+    </div>
+
+    <div class="header-actions">
+      <button class="header-btn" id="btn-theme" title="Alternar Modo Escuro / Claro (T)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+
+      <button class="header-btn" id="btn-overview" title="Visão Geral dos Slides (G)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+        </svg>
+      </button>
+
+      <button class="header-btn" id="btn-help" title="Atalhos e Dicas (?)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </button>
+
+      <button class="header-btn" id="btn-fullscreen" title="Tela Cheia (F)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Viewport Principal de Apresentação -->
+  <main id="presentation-viewport">
+
+    <!-- ==========================================
+         SLIDE 01: CAPA
+         ========================================== -->
+    <section class="slide active" id="slide-1" data-index="1">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Treinamento Corporativo • 2026
+          </div>
+          <h1 class="slide-title">
+            Segurança da Informação e <br><span class="gradient-text">Boas Práticas no Trabalho</span>
+          </h1>
+          <p class="slide-subtitle">
+            Protegendo dados estratégicos, a integridade da empresa e a sua privacidade no dia a dia profissional.
+          </p>
+          </div>
+
+          <div class="cards-grid-3">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <div class="card-title">Prevenção Ativa</div>
+              </div>
+              <p class="card-desc">Redução proativa de riscos cibernéticos na rotina.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                <div class="card-title">Tríade CIA</div>
+              </div>
+              <p class="card-desc">Confidencialidade, Integridade e Disponibilidade.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <div class="card-title">Cultura Coletiva</div>
+              </div>
+              <p class="card-desc">Cada colaborador é a principal barreira de defesa.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>Dica de navegação: use as <strong>setas do teclado (← →)</strong> para avançar e <strong>clique em qualquer elemento (títulos, cards, avisos ou imagens) para ampliar</strong>.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 1" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 1: Escudo Holográfico Central -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="grad-shield-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="grad-shield-border" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8"/>
+                    <stop offset="50%" stop-color="#06b6d4"/>
+                    <stop offset="100%" stop-color="#3b82f6"/>
+                  </linearGradient>
+                  <linearGradient id="grad-shield-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+                  </linearGradient>
+                  <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="8" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Brilho de Fundo Pulsante -->
+                <circle cx="250" cy="210" r="160" fill="url(#grad-shield-glow)" class="anim-pulse" />
+
+                <!-- Órbitas e Nós Holográficos -->
+                <circle cx="250" cy="210" r="180" fill="none" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="8 6" class="anim-rotate" />
+                <circle cx="250" cy="210" r="130" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="12 8" style="animation: rotateSlow 28s linear infinite reverse;" />
+
+                <!-- Nós de Rede Periféricos -->
+                <g stroke="#38bdf8" stroke-width="1.5" opacity="0.6">
+                  <line x1="120" y1="120" x2="200" y2="170" class="anim-flow" />
+                  <line x1="380" y1="120" x2="300" y2="170" class="anim-flow" />
+                  <line x1="100" y1="280" x2="190" y2="260" class="anim-flow" />
+                  <line x1="400" y1="280" x2="310" y2="260" class="anim-flow" />
+                </g>
+                <circle cx="120" cy="120" r="5" fill="#06b6d4" filter="url(#glow-cyan)" />
+                <circle cx="380" cy="120" r="5" fill="#38bdf8" filter="url(#glow-cyan)" />
+                <circle cx="100" cy="280" r="5" fill="#10b981" filter="url(#glow-cyan)" />
+                <circle cx="400" cy="280" r="5" fill="#8b5cf6" filter="url(#glow-cyan)" />
+
+                <!-- Escudo de Alta Segurança -->
+                <path d="M250 60 L350 110 V230 C350 300 250 350 250 350 C250 350 150 300 150 230 V110 Z"
+                      fill="url(#grad-shield-inner)" stroke="url(#grad-shield-border)" stroke-width="4" filter="url(#glow-cyan)" />
+
+                <!-- Camada Interna do Escudo -->
+                <path d="M250 85 L328 125 V220 C328 275 250 318 250 318 C250 318 172 275 172 220 V125 Z"
+                      fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="4 4" />
+
+                <!-- Cadeado Biométrico no Centro do Escudo -->
+                <rect x="220" y="190" width="60" height="50" rx="10" fill="#0369a1" stroke="#38bdf8" stroke-width="2" />
+                <path d="M232 190 V165 C232 154 240 146 250 146 C260 146 268 154 268 165 V190" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+                <circle cx="250" cy="212" r="5" fill="#f8fafc" />
+                <path d="M250 217 V227" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" />
+
+                <!-- Linhas Digitais de Autenticação -->
+                <path d="M205 260 H295" stroke="#10b981" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+                <path d="M220 270 H280" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 02: O QUE É SEGURANÇA DA INFORMAÇÃO (CIA)
+         ========================================== -->
+    <section class="slide" id="slide-2" data-index="2">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 01 • Fundamentos
+          </div>
+          <h2 class="slide-title">
+            O que é <span class="gradient-text">Segurança da Informação?</span>
+          </h2>
+          <p class="slide-subtitle">
+            É o conjunto de medidas e políticas que protegem os dados contra acessos não autorizados, modificações indevidas e indisponibilidade.
+          </p>
+          </div>
+
+          <div class="cards-grid">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <div class="card-title">Confidencialidade</div>
+              </div>
+              <p class="card-desc">Garante que a informação só possa ser visualizada por pessoas ou sistemas devidamente autorizados. Evita vazamentos e espionagem.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                <div class="card-title">Integridade</div>
+              </div>
+              <p class="card-desc">Assegura que a informação permaneça íntegra, exata e completa, sem alterações maliciosas ou acidentais durante o tráfego ou armazenamento.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="card-title">Disponibilidade</div>
+              </div>
+              <p class="card-desc">Garante que os sistemas, ferramentas e arquivos corporativos estejam acessíveis a qualquer momento pelos usuários autorizados quando necessário.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span><strong>Regra de Ouro:</strong> Se qualquer um dos três pilares falhar, a segurança da empresa e dos clientes fica comprometida.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 2" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 2: Tríade CIA Interconectada -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad-triangle" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#06b6d4"/>
+                    <stop offset="50%" stop-color="#10b981"/>
+                    <stop offset="100%" stop-color="#f59e0b"/>
+                  </linearGradient>
+                  <filter id="glow-cia" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Linhas do Triângulo Equilátero -->
+                <polygon points="250,70 100,320 400,320" fill="none" stroke="url(#grad-triangle)" stroke-width="4" stroke-linejoin="round" filter="url(#glow-cia)" />
+                <polygon points="250,90 120,310 380,310" fill="#0f172a" fill-opacity="0.7" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+
+                <!-- Feixes de Dados Circulantes -->
+                <line x1="250" y1="70" x2="400" y2="320" stroke="#f59e0b" stroke-width="2" class="anim-flow" stroke-opacity="0.8" />
+                <line x1="400" y1="320" x2="100" y2="320" stroke="#10b981" stroke-width="2" class="anim-flow" stroke-opacity="0.8" />
+                <line x1="100" y1="320" x2="250" y2="70" stroke="#06b6d4" stroke-width="2" class="anim-flow" stroke-opacity="0.8" />
+
+                <!-- Vértice Topo: Confidencialidade -->
+                <g transform="translate(250, 70)">
+                  <circle cx="0" cy="0" r="38" fill="#0c4a6e" stroke="#38bdf8" stroke-width="3" filter="url(#glow-cia)" />
+                  <path d="M-12 -2 C-12 -2 -7 -9 0 -9 C7 -9 12 -2 12 -2 C12 -2 7 5 0 5 C-7 5 -12 -2 -12 -2 Z" fill="none" stroke="#f8fafc" stroke-width="2" />
+                  <circle cx="0" cy="-2" r="3" fill="#38bdf8" />
+                  <text x="0" y="16" fill="#e0f2fe" font-size="10" font-weight="700" text-anchor="middle">CONFIDENCIAL</text>
+                </g>
+
+                <!-- Vértice Esquerda: Integridade -->
+                <g transform="translate(100, 320)">
+                  <circle cx="0" cy="0" r="38" fill="#064e3b" stroke="#34d399" stroke-width="3" filter="url(#glow-cia)" />
+                  <path d="M-8 -4 L-2 3 L8 -7" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" />
+                  <text x="0" y="16" fill="#d1fae5" font-size="10" font-weight="700" text-anchor="middle">INTEGRIDADE</text>
+                </g>
+
+                <!-- Vértice Direita: Disponibilidade -->
+                <g transform="translate(400, 320)">
+                  <circle cx="0" cy="0" r="38" fill="#78350f" stroke="#fbbf24" stroke-width="3" filter="url(#glow-cia)" />
+                  <path d="M-6 -8 H6 V-2 H-6 Z M-6 0 H6 V6 H-6 Z" fill="none" stroke="#f8fafc" stroke-width="2" />
+                  <circle cx="0" cy="8" r="2" fill="#34d399" />
+                  <text x="0" y="16" fill="#fef3c7" font-size="10" font-weight="700" text-anchor="middle">DISPONÍVEL</text>
+                </g>
+
+                <!-- Núcleo Central: Dados Seguros -->
+                <circle cx="250" cy="240" r="28" fill="#1e293b" stroke="#06b6d4" stroke-width="2" class="anim-pulse" />
+                <text x="250" y="244" fill="#38bdf8" font-size="11" font-weight="800" text-anchor="middle">CIA</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 03: POR QUE IMPORTA (RISCOS E IMPACTOS)
+         ========================================== -->
+    <section class="slide" id="slide-3" data-index="3">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 02 • Conscientização
+          </div>
+          <h2 class="slide-title">
+            Por que Importa? <span class="gradient-text">Riscos e Impactos</span>
+          </h2>
+          <p class="slide-subtitle">
+            Um único incidente cibernético pode paralisar operações e causar prejuízos irreparáveis à reputação e às finanças da empresa.
+          </p>
+          </div>
+
+          <div class="cards-grid-2">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <div class="card-title">Prejuízo Financeiro</div>
+              </div>
+              <p class="card-desc">Custos diretos de resposta a incidentes, chantagens de ransomware e perda de faturamento por inatividade.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <div class="card-title">Danos à Reputação</div>
+              </div>
+              <p class="card-desc">Quebra irreparável da confiança de clientes, parceiros comerciais e desvalorização da imagem de mercado.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+                <div class="card-title">Paralisação Operacional</div>
+              </div>
+              <p class="card-desc">Serviços e ferramentas essenciais bloqueados, impedindo equipes inteiras de produzir e atender demandas.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
+                <div class="card-title">Sanções Jurídicas & Multas</div>
+              </div>
+              <p class="card-desc">Fiscalização severa da ANPD com multas previstas de até R$ 50 milhões por infração sob a LGPD.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout danger">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span><strong>Fato Comprovado:</strong> Mais de 85% dos incidentes corporativos têm como ponto de partida uma ação humana ou engano de usuário.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 3" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 3: Painel de Riscos e Impactos Cibernéticos -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad-danger-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ef4444"/>
+                    <stop offset="100%" stop-color="#f97316"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Moldura do Painel de Telemetria -->
+                <rect x="50" y="50" width="400" height="320" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+                <rect x="50" y="50" width="400" height="40" rx="16" fill="#1e293b" />
+                <circle cx="80" cy="70" r="5" fill="#ef4444" />
+                <circle cx="95" cy="70" r="5" fill="#f59e0b" />
+                <circle cx="110" cy="70" r="5" fill="#10b981" />
+                <text x="250" y="74" fill="#94a3b8" font-size="12" font-weight="600" text-anchor="middle">MATRIZ DE RISCO CORPORATIVO</text>
+
+                <!-- Medidor de Risco Central -->
+                <g transform="translate(150, 190)">
+                  <circle cx="0" cy="0" r="60" fill="none" stroke="#334155" stroke-width="12" />
+                  <path d="M -42 42 A 60 60 0 1 1 42 42" fill="none" stroke="url(#grad-danger-bar)" stroke-width="12" stroke-linecap="round" />
+                  <text x="0" y="-5" fill="#f87171" font-size="20" font-weight="800" text-anchor="middle">85%</text>
+                  <text x="0" y="15" fill="#94a3b8" font-size="9" text-anchor="middle">FATOR HUMANO</text>
+                </g>
+
+                <!-- Barras de Impacto à Direita -->
+                <g transform="translate(260, 130)">
+                  <text x="0" y="0" fill="#f8fafc" font-size="11" font-weight="600">Perda Financeira</text>
+                  <rect x="0" y="8" width="160" height="10" rx="5" fill="#334155" />
+                  <rect x="0" y="8" width="140" height="10" rx="5" fill="#ef4444" class="anim-pulse" />
+
+                  <text x="0" y="45" fill="#f8fafc" font-size="11" font-weight="600">Danos Reputacionais</text>
+                  <rect x="0" y="53" width="160" height="10" rx="5" fill="#334155" />
+                  <rect x="0" y="53" width="125" height="10" rx="5" fill="#f97316" />
+
+                  <text x="0" y="90" fill="#f8fafc" font-size="11" font-weight="600">Paralisação de TI</text>
+                  <rect x="0" y="98" width="160" height="10" rx="5" fill="#334155" />
+                  <rect x="0" y="98" width="110" height="10" rx="5" fill="#eab308" />
+
+                  <text x="0" y="135" fill="#f8fafc" font-size="11" font-weight="600">Multas LGPD / Processos</text>
+                  <rect x="0" y="143" width="160" height="10" rx="5" fill="#334155" />
+                  <rect x="0" y="143" width="150" height="10" rx="5" fill="#ef4444" />
+                </g>
+
+                <!-- Alerta Inferior Piscante -->
+                <rect x="80" y="310" width="340" height="36" rx="8" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="1" />
+                <circle cx="105" cy="328" r="6" fill="#ef4444" class="anim-pulse" />
+                <text x="125" y="332" fill="#fca5a5" font-size="11" font-weight="700">AMEAÇA DETECTADA: PREVENÇÃO É VITAL</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 04: PRINCIPAIS AMEAÇAS DIGITAIS
+         ========================================== -->
+    <section class="slide" id="slide-4" data-index="4">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 03 • Vetores de Ataque
+          </div>
+          <h2 class="slide-title">
+            Principais <span class="gradient-text">Ameaças Cibernéticas</span>
+          </h2>
+          <p class="slide-subtitle">
+            Conhecer as táticas utilizadas pelos criminosos é o primeiro passo para não se tornar a porta de entrada para um ataque.
+          </p>
+          </div>
+
+          <div class="cards-grid-2">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div class="card-title">1. Phishing</div>
+              </div>
+              <p class="card-desc">Mensagens fraudulentas (e-mail, WhatsApp, SMS) que induzem a clicar em links maliciosos ou digitar senhas em páginas falsas.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/><circle cx="12" cy="16" r="1"/></svg></div>
+                <div class="card-title">2. Ransomware</div>
+              </div>
+              <p class="card-desc">Software malicioso que 'sequestra' e criptografa arquivos e servidores corporativos, exigindo resgate milionário para devolução.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <div class="card-title">3. Malware & Cavalos de Troia</div>
+              </div>
+              <p class="card-desc">Programas nocivos ocultos em anexos ou softwares piratas que espiam a tela, capturam digitação e roubam credenciais.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <div class="card-title">4. Engenharia Social</div>
+              </div>
+              <p class="card-desc">Manipulação psicológica de pessoas através de pedidos urgentes, falsas amizades ou fingindo ser diretores e técnicos de TI.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span><strong>Atenção:</strong> Hackers modernos raramente atacam firewalls blindados; eles atacam pessoas desatentas.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 4" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 4: Radar Cibernético com Quadrantes de Ameaças -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Círculos do Radar -->
+                <g stroke="#06b6d4" stroke-opacity="0.3" fill="none" stroke-width="1.5">
+                  <circle cx="250" cy="210" r="160" />
+                  <circle cx="250" cy="210" r="110" />
+                  <circle cx="250" cy="210" r="60" />
+                  <line x1="90" y1="210" x2="410" y2="210" />
+                  <line x1="250" y1="50" x2="250" y2="370" />
+                </g>
+
+                <!-- Feixe Giratório do Radar -->
+                <path d="M250 210 L370 110 A160 160 0 0 0 250 50 Z" fill="url(#grad-shield-glow)" class="anim-rotate" opacity="0.6" />
+
+                <!-- Quadrante 1: Phishing -->
+                <g transform="translate(170, 130)">
+                  <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+                  <path d="M-8 -6 H8 V6 H-8 Z" fill="none" stroke="#f59e0b" stroke-width="1.8" />
+                  <path d="M-8 -6 L0 1 L8 -6" fill="none" stroke="#f59e0b" stroke-width="1.8" />
+                  <text x="0" y="22" fill="#fbbf24" font-size="9" font-weight="700" text-anchor="middle">PHISHING</text>
+                </g>
+
+                <!-- Quadrante 2: Ransomware -->
+                <g transform="translate(330, 130)">
+                  <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#ef4444" stroke-width="2" class="anim-pulse" />
+                  <rect x="-8" y="-4" width="16" height="12" rx="2" fill="none" stroke="#ef4444" stroke-width="1.8" />
+                  <path d="M-5 -4 V-8 C-5 -11 5 -11 5 -8 V-4" fill="none" stroke="#ef4444" stroke-width="1.8" />
+                  <text x="0" y="22" fill="#f87171" font-size="9" font-weight="700" text-anchor="middle">RANSOMWARE</text>
+                </g>
+
+                <!-- Quadrante 3: Malware -->
+                <g transform="translate(170, 290)">
+                  <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" />
+                  <circle cx="0" cy="0" r="6" fill="#8b5cf6" />
+                  <line x1="-10" y1="0" x2="10" y2="0" stroke="#8b5cf6" stroke-width="2" />
+                  <line x1="-7" y1="-7" x2="7" y2="7" stroke="#8b5cf6" stroke-width="2" />
+                  <line x1="-7" y1="7" x2="7" y2="-7" stroke="#8b5cf6" stroke-width="2" />
+                  <text x="0" y="22" fill="#c084fc" font-size="9" font-weight="700" text-anchor="middle">MALWARE</text>
+                </g>
+
+                <!-- Quadrante 4: Engenharia Social -->
+                <g transform="translate(330, 290)">
+                  <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+                  <circle cx="0" cy="-4" r="5" fill="none" stroke="#38bdf8" stroke-width="2" />
+                  <path d="M-8 8 C-8 4 8 4 8 8" fill="none" stroke="#38bdf8" stroke-width="2" />
+                  <text x="0" y="22" fill="#93c5fd" font-size="9" font-weight="700" text-anchor="middle">ENG. SOCIAL</text>
+                </g>
+
+                <!-- Centro de Bloqueio -->
+                <circle cx="250" cy="210" r="10" fill="#06b6d4" filter="url(#glow-cyan)" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 05: SENHAS FORTES E GERENCIADOR DE SENHAS
+         ========================================== -->
+    <section class="slide" id="slide-5" data-index="5">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 04 • Gestão de Acesso
+          </div>
+          <h2 class="slide-title">
+            Senhas Fortes e <span class="gradient-text">Gerenciadores de Senhas</span>
+          </h2>
+          <p class="slide-subtitle">
+            A senha ainda é a primeira barreira contra invasores. Senhas previsíveis ou reutilizadas facilitam o comprometimento de toda a rede.
+          </p>
+          </div>
+
+          <div class="checklist-group">
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Use Frases Secretas Longas (Passphrases)</strong>
+                <p>Priorize frases com mais de 14 caracteres combinando letras maiúsculas, minúsculas, números e símbolos especiais.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Zero Reutilização de Senhas</strong>
+                <p>Nunca use a mesma senha corporativa para redes sociais, e-mail pessoal ou contas de streaming particulares.</p>
+              </div>
+            </div>
+
+            <div class="check-item danger-border">
+              <div class="check-badge danger"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+              <div>
+                <strong>Proibido Anotar Senhas em Papel</strong>
+                <p>Post-it colado no monitor, bloco de notas 'senhas.txt' ou cadernos na gaveta expõem a empresa ao menor descuido.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Utilize um Cofre de Senhas Oficial</strong>
+                <p>Gerenciadores de senhas corporativos geram senhas únicas ultrafortes e as preenchem de forma criptografada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comparison-box">
+            <div class="comp-card bad">
+              <div class="comp-badge">❌ SENHA FRACA</div>
+              <code>Empresa2024!</code>
+              <p style="margin-top: 4px; color: #f87171;">Quebrada em segundos por ataques de dicionário.</p>
+            </div>
+            <div class="comp-card good">
+              <div class="comp-badge">✅ SENHA SEGURA</div>
+              <code>C@f3#G3l4do_Nuv3m$2026</code>
+              <p style="margin-top: 4px; color: #34d399;">Leva trilhões de anos para computadores decifrarem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 5" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 5: Cofre Digital com Medidor de Força de Senha -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Porta do Cofre -->
+                <circle cx="250" cy="200" r="130" fill="#0f172a" stroke="#334155" stroke-width="8" />
+                <circle cx="250" cy="200" r="115" fill="#1e293b" stroke="#06b6d4" stroke-width="2" stroke-dasharray="10 6" class="anim-rotate" />
+
+                <!-- Dials Mecânicos / Eletrônicos -->
+                <circle cx="250" cy="200" r="65" fill="#0c4a6e" stroke="#38bdf8" stroke-width="4" />
+                <path d="M250 145 V165 M250 235 V255 M195 200 H215 M285 200 H305" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+                <circle cx="250" cy="200" r="22" fill="#0284c7" />
+
+                <!-- Raio Central / Chave -->
+                <path d="M246 190 H254 V202 L258 206 V214 H250 V205 L246 201 Z" fill="#f8fafc" />
+
+                <!-- Barra de Força da Senha Embaixo -->
+                <g transform="translate(130, 350)">
+                  <rect x="0" y="0" width="240" height="14" rx="7" fill="#334155" />
+                  <rect x="0" y="0" width="240" height="14" rx="7" fill="#10b981" class="anim-pulse" />
+                  <text x="120" y="28" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">SEGURANÇA: 100% INVIOLÁVEL</text>
+                </g>
+
+                <!-- Asteriscos de Senha Flutuantes -->
+                <g fill="#06b6d4" font-size="28" font-weight="900" text-anchor="middle">
+                  <text x="180" y="90" class="anim-float">•</text>
+                  <text x="215" y="85" class="anim-float" style="animation-delay: 0.2s">•</text>
+                  <text x="250" y="80" class="anim-float" style="animation-delay: 0.4s">•</text>
+                  <text x="285" y="85" class="anim-float" style="animation-delay: 0.6s">•</text>
+                  <text x="320" y="90" class="anim-float" style="animation-delay: 0.8s">•</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 06: AUTENTICAÇÃO EM DOIS FATORES (2FA / MFA)
+         ========================================== -->
+    <section class="slide" id="slide-6" data-index="6">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 05 • Blindagem de Contas
+          </div>
+          <h2 class="slide-title">
+            Autenticação em <span class="gradient-text">Dois Fatores (2FA / MFA)</span>
+          </h2>
+          <p class="slide-subtitle">
+            Mesmo que um cibercriminoso descubra ou adivinhe a sua senha, a autenticação multifator impede o acesso à sua conta.
+          </p>
+          </div>
+
+          <div class="cards-grid-3">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+                <div class="card-title">1. Algo que você sabe</div>
+              </div>
+              <p class="card-desc">Sua senha mestra, passphrase ou código PIN pessoal.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                <div class="card-title">2. Algo que você tem</div>
+              </div>
+              <p class="card-desc">App autenticador no smartphone (Google/Microsoft Auth) ou chave física FIDO.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 4 11m0 0v.5"/></svg></div>
+                <div class="card-title">3. Algo que você é</div>
+              </div>
+              <p class="card-desc">Biometria: reconhecimento facial (Windows Hello) ou impressão digital.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout danger">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span><strong>Cuidado com 'Fadiga de MFA':</strong> Nunca clique em "Aprovar login" em notificações no celular se não estiver ativamente entrando no sistema!</span>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Ative 2FA em todas as suas contas corporativas e em serviços pessoais críticos (e-mail, bancos, redes).</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 6" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 6: Smartphone com Token OTP e Autenticação Criptografada -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Silhueta do Smartphone -->
+                <rect x="180" y="60" width="140" height="280" rx="24" fill="#0f172a" stroke="#38bdf8" stroke-width="3" filter="url(#glow-cyan)" />
+                <rect x="190" y="80" width="120" height="240" rx="14" fill="#1e293b" />
+                
+                <!-- Câmera / Speaker -->
+                <circle cx="250" cy="70" r="3" fill="#64748b" />
+                <line x1="240" y1="70" x2="246" y2="70" stroke="#64748b" stroke-width="2" stroke-linecap="round" />
+
+                <!-- Tela do App Autenticador -->
+                <rect x="205" y="105" width="90" height="30" rx="6" fill="#0c4a6e" />
+                <text x="250" y="125" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">TOKEN 2FA</text>
+
+                <!-- Código OTP de 6 Dígitos -->
+                <text x="250" y="175" fill="#10b981" font-size="22" font-weight="900" letter-spacing="3" text-anchor="middle" class="anim-pulse">849 203</text>
+                
+                <!-- Barra de Tempo Circular do Código -->
+                <circle cx="250" cy="225" r="18" fill="none" stroke="#334155" stroke-width="3" />
+                <circle cx="250" cy="225" r="18" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="80 30" class="anim-rotate" />
+                <text x="250" y="229" fill="#06b6d4" font-size="10" font-weight="800" text-anchor="middle">30s</text>
+
+                <!-- Botão Aprovar no Celular -->
+                <rect x="205" y="265" width="90" height="28" rx="8" fill="#10b981" />
+                <text x="250" y="283" fill="#022c22" font-size="11" font-weight="800" text-anchor="middle">APROVAR ✓</text>
+
+                <!-- Ondas de Sinal Criptografado -->
+                <path d="M150 160 A60 60 0 0 0 150 240" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" class="anim-pulse" />
+                <path d="M130 140 A90 90 0 0 0 130 260" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+                <path d="M350 160 A60 60 0 0 1 350 240" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" class="anim-pulse" />
+                <path d="M370 140 A90 90 0 0 1 370 260" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 07: E-MAILS E LINKS SUSPEITOS
+         ========================================== -->
+    <section class="slide" id="slide-7" data-index="7">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 06 • Comunicação Segura
+          </div>
+          <h2 class="slide-title">
+            E-mails e <span class="gradient-text">Links Suspeitos</span>
+          </h2>
+          <p class="slide-subtitle">
+            O e-mail é a porta de entrada mais explorada para invasões. A desconfiança preventiva é o seu melhor antivírus.
+          </p>
+          </div>
+
+          <div class="checklist-group">
+            <div class="check-item danger-border">
+              <div class="check-badge danger"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+              <div>
+                <strong>Inspecione o Remetente Real com Atenção</strong>
+                <p>Nomes visíveis podem enganar. Olhe o endereço exato após o '@' (ex: <code>suporte@empresa-financeira.xyz</code> não é o banco oficial).</p>
+              </div>
+            </div>
+
+            <div class="check-item danger-border">
+              <div class="check-badge danger"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+              <div>
+                <strong>Cuidado com Senso Excessivo de Urgência</strong>
+                <p>Frases como 'Sua conta será cancelada em 1 hora' ou 'PIX não reconhecido, confirme agora' criam pânico artificial.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Passe o Mouse Sobre o Link Antes de Clicar</strong>
+                <p>Posicione o cursor sem clicar para ver o destino real da URL no rodapé do navegador ou cliente de e-mail.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Atenção a Anexos Duplos ou Executáveis</strong>
+                <p>Arquivos com terminações <code>.exe</code>, <code>.scr</code>, <code>.vbs</code>, <code>.zip</code> ou planilhas solicitando ativar macros.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span><strong>Na dúvida:</strong> não clique, não responda e encaminhe o e-mail suspeito para a equipe de Segurança da Informação.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 7" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 7: Card de E-mail de Phishing sendo Inspecionado com Lupa -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Janela de E-mail Malicioso -->
+                <rect x="70" y="60" width="360" height="280" rx="14" fill="#0f172a" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+                
+                <!-- Barra de Título do E-mail -->
+                <rect x="70" y="60" width="360" height="38" rx="14" fill="#1e293b" />
+                <circle cx="95" cy="79" r="5" fill="#ef4444" />
+                <circle cx="110" cy="79" r="5" fill="#f59e0b" />
+                <circle cx="125" cy="79" r="5" fill="#10b981" />
+                <text x="250" y="83" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">Mensagem Recebida: URGENTE</text>
+
+                <!-- Cabeçalho do Remetente Falso -->
+                <g transform="translate(95, 120)">
+                  <text x="0" y="0" fill="#64748b" font-size="10" font-weight="700">De:</text>
+                  <text x="30" y="0" fill="#f87171" font-size="10" font-weight="700">suporte@banco-falso-pagamentos.xyz ⚠️</text>
+
+                  <text x="0" y="24" fill="#64748b" font-size="10" font-weight="700">Para:</text>
+                  <text x="35" y="24" fill="#94a3b8" font-size="10">voce@suaempresa.com.br</text>
+
+                  <text x="0" y="48" fill="#64748b" font-size="10" font-weight="700">Assunto:</text>
+                  <text x="50" y="48" fill="#f8fafc" font-size="10" font-weight="700">Fatura pendente - Conta bloqueada em 2h</text>
+                </g>
+
+                <!-- Corpo do E-mail -->
+                <line x1="95" y1="185" x2="405" y2="185" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                <text x="95" y="210" fill="#cbd5e1" font-size="11">Prezado colaborador, clique abaixo para evitar o cancelamento:</text>
+                
+                <!-- Botão Malicioso Falso -->
+                <rect x="95" y="225" width="160" height="32" rx="6" fill="#ef4444" opacity="0.9" />
+                <text x="175" y="245" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">ATUALIZAR DADOS AGORA</text>
+
+                <!-- Destino Real da URL Revelado -->
+                <rect x="95" y="270" width="310" height="24" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+                <text x="105" y="286" fill="#a5b4fc" font-size="9.5" font-family="monospace">URL Real: http://hack-login-stealer.ru/token</text>
+
+                <!-- Lupa de Inspeção Forense -->
+                <g transform="translate(350, 240)">
+                  <circle cx="0" cy="0" r="42" fill="#0c4a6e" fill-opacity="0.75" stroke="#38bdf8" stroke-width="4" filter="url(#glow-cyan)" />
+                  <line x1="30" y1="30" x2="65" y2="65" stroke="#38bdf8" stroke-width="7" stroke-linecap="round" />
+                  <path d="M-15 -10 L15 10 M-15 10 L15 -10" stroke="#ef4444" stroke-width="4" stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 08: USO SEGURO DE INTERNET, WI-FI E DISPOSITIVOS
+         ========================================== -->
+    <section class="slide" id="slide-8" data-index="8">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 07 • Conectividade & Mobilidade
+          </div>
+          <h2 class="slide-title">
+            Uso Seguro de <span class="gradient-text">Internet, Wi-Fi e Dispositivos</span>
+          </h2>
+          <p class="slide-subtitle">
+            Trabalho híbrido e viagens exigem cuidados redobrados com redes externas e equipamentos corporativos.
+          </p>
+          </div>
+
+          <div class="cards-grid-2">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+                <div class="card-title">Cuidado com Wi-Fi Público</div>
+              </div>
+              <p class="card-desc">Redes abertas em aeroportos, hotéis e cafés podem ser interceptadas. <strong>Sempre utilize a VPN corporativa</strong>.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+                <div class="card-title">Mantenha Softwares Atualizados</div>
+              </div>
+              <p class="card-desc">Instale imediatamente as atualizações do Windows/macOS, navegadores e antivírus. Elas corrigem falhas conhecidas.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                <div class="card-title">Equipamento Corporativo é Exclusivo</div>
+              </div>
+              <p class="card-desc">Não empreste o notebook do trabalho para familiares, nem instale jogos, torrents ou softwares não homologados pela TI.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                <div class="card-title">Navegação em Sites Seguros</div>
+              </div>
+              <p class="card-desc">Certifique-se do cadeado HTTPS ativo na barra de endereços antes de digitar dados corporativos sensíveis.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span><strong>VPN = Túnel Blindado:</strong> A VPN criptografa todo o tráfego da sua máquina até a rede da empresa, blindando seus acessos.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 8" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 8: Túnel VPN Blindado sobre Rede Hostil -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Nuvem Pública Hostil (Fundo) -->
+                <path d="M160 160 C140 130 180 90 220 100 C240 70 290 70 310 100 C350 90 380 130 360 160 C390 190 370 240 330 240 H170 C130 240 120 190 160 160 Z"
+                      fill="#1e1b4b" stroke="#4338ca" stroke-width="2" opacity="0.6" />
+                <text x="250" y="125" fill="#818cf8" font-size="10" font-weight="700" text-anchor="middle">INTERNET PÚBLICA NÃO SEGURA</text>
+
+                <!-- Ataques Interceptados na Nuvem -->
+                <circle cx="210" cy="180" r="16" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5" />
+                <text x="210" y="184" fill="#fca5a5" font-size="11" font-weight="800" text-anchor="middle">✕</text>
+
+                <circle cx="290" cy="180" r="16" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5" />
+                <text x="290" y="184" fill="#fca5a5" font-size="11" font-weight="800" text-anchor="middle">✕</text>
+
+                <!-- Túnel VPN Criptografado Atravessando -->
+                <rect x="90" y="270" width="320" height="44" rx="22" fill="#0c4a6e" stroke="#38bdf8" stroke-width="3" filter="url(#glow-cyan)" />
+                <line x1="120" y1="292" x2="380" y2="292" stroke="#10b981" stroke-width="3" class="anim-flow" />
+                <text x="250" y="296" fill="#e0f2fe" font-size="11" font-weight="800" text-anchor="middle">🔒 TÚNEL VPN CORPORATIVO CRIPTOGRAFADO</text>
+
+                <!-- Laptop do Usuário (Origem) -->
+                <g transform="translate(90, 270)">
+                  <rect x="-35" y="-55" width="50" height="34" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+                  <rect x="-42" y="-21" width="64" height="6" rx="2" fill="#475569" />
+                  <circle cx="-10" cy="-38" r="5" fill="#10b981" />
+                </g>
+
+                <!-- Servidor da Empresa (Destino) -->
+                <g transform="translate(410, 270)">
+                  <rect x="-15" y="-60" width="45" height="42" rx="4" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+                  <line x1="-5" y1="-50" x2="20" y2="-50" stroke="#10b981" stroke-width="2" />
+                  <line x1="-5" y1="-40" x2="20" y2="-40" stroke="#10b981" stroke-width="2" />
+                  <circle cx="22" cy="-50" r="2" fill="#34d399" />
+                  <circle cx="22" cy="-40" r="2" fill="#34d399" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 09: PROTEÇÃO DE DADOS E LGPD
+         ========================================== -->
+    <section class="slide" id="slide-9" data-index="9">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 08 • Governança & Privacidade
+          </div>
+          <h2 class="slide-title">
+            Proteção de Dados e <span class="gradient-text">Conformidade com a LGPD</span>
+          </h2>
+          <p class="slide-subtitle">
+            A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) estabelece regras claras para a coleta, uso e armazenamento de informações pessoais.
+          </p>
+          </div>
+
+          <div class="cards-grid-2">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                <div class="card-title">Dados Pessoais</div>
+              </div>
+              <p class="card-desc">Qualquer informação que identifique ou possa identificar uma pessoa física: CPF, RG, nome completo, e-mail, telefone, endereço.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+                <div class="card-title">Dados Sensíveis</div>
+              </div>
+              <p class="card-desc">Origem racial, convicção religiosa, dados de saúde, biometria ou vida sexual. Exigem nível máximo de proteção e sigilo.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+                <div class="card-title">Princípio da Necessidade</div>
+              </div>
+              <p class="card-desc">Apenas trate ou visualize os dados estritamente indispensáveis para o cumprimento da sua função na empresa.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+                <div class="card-title">Compartilhamento Seguro</div>
+              </div>
+              <p class="card-desc">Nunca envie planilhas de clientes ou colaboradores por WhatsApp pessoal ou e-mails externos sem criptografia homologada.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span><strong>Responsabilidade Compartilhada:</strong> Proteger dados de clientes é uma obrigação legal de toda a organização e de cada funcionário.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 9" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 9: Balança da LGPD e Selo de Conformidade -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Coluna Central da Balança da Lei -->
+                <rect x="244" y="90" width="12" height="210" rx="6" fill="#334155" />
+                <rect x="210" y="295" width="80" height="15" rx="7" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+                <circle cx="250" cy="90" r="10" fill="#06b6d4" filter="url(#glow-cyan)" />
+
+                <!-- Barra Horizontal da Balança -->
+                <line x1="130" y1="110" x2="370" y2="110" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+
+                <!-- Prato Esquerdo: Dados Protegidos -->
+                <g transform="translate(130, 110)">
+                  <line x1="0" y1="0" x2="-35" y2="70" stroke="#64748b" stroke-width="1.5" />
+                  <line x1="0" y1="0" x2="35" y2="70" stroke="#64748b" stroke-width="1.5" />
+                  <path d="M-45 70 C-45 100 45 100 45 70 Z" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2" />
+                  <!-- Documentos Seguros -->
+                  <rect x="-18" y="45" width="36" height="26" rx="4" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+                  <path d="M-6 58 L-1 63 L8 53" fill="none" stroke="#10b981" stroke-width="2" />
+                </g>
+
+                <!-- Prato Direito: Direitos dos Titulares -->
+                <g transform="translate(370, 110)">
+                  <line x1="0" y1="0" x2="-35" y2="70" stroke="#64748b" stroke-width="1.5" />
+                  <line x1="0" y1="0" x2="35" y2="70" stroke="#64748b" stroke-width="1.5" />
+                  <path d="M-45 70 C-45 100 45 100 45 70 Z" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2" />
+                  <!-- Usuário / Titular Protegido -->
+                  <circle cx="0" cy="50" r="8" fill="#38bdf8" />
+                  <path d="M-12 68 C-12 58 12 58 12 68" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+                </g>
+
+                <!-- Selo de Conformidade LGPD no Rodapé -->
+                <g transform="translate(250, 350)">
+                  <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#064e3b" stroke="#10b981" stroke-width="2" class="anim-pulse" />
+                  <text x="0" y="5" fill="#34d399" font-size="12" font-weight="800" text-anchor="middle">✓ LGPD COMPLIANCE</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 10: MESA LIMPA, TELA BLOQUEADA E PENDRIVES
+         ========================================== -->
+    <section class="slide" id="slide-10" data-index="10">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 09 • Segurança Física
+          </div>
+          <h2 class="slide-title">
+            Mesa Limpa, <span class="gradient-text">Tela Bloqueada e Pendrives</span>
+          </h2>
+          <p class="slide-subtitle">
+            A proteção digital começa no espaço físico de trabalho. Descuidos presenciais abrem brechas imediatas.
+          </p>
+          </div>
+
+          <div class="checklist-group">
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              <div>
+                <strong>Bloqueie a Tela ao se Ausentar (Win + L)</strong>
+                <p>Mesmo para pegar um café ou ir ao banheiro por 1 minuto: <strong>pressione Win + L</strong> (ou <strong>Cmd + Ctrl + Q</strong> no Mac). Evita acessos indevidos por terceiros.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+              <div>
+                <strong>Política de Mesa Limpa (Clean Desk)</strong>
+                <p>Não deixe relatórios confidenciais, notas fiscais, crachás ou anotações com dados de clientes espalhados na mesa ao sair.</p>
+              </div>
+            </div>
+
+            <div class="check-item danger-border">
+              <div class="check-badge danger"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+              <div>
+                <strong>Nunca Conecte Pendrives Desconhecidos</strong>
+                <p>Pendrives achados em corredores ou estacionamentos são iscas clássicas ('BadUSB'). Ao plugar, eles injetam vírus sem aviso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-callout tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Hábito Automático:</strong> Levantou da cadeira? O polegar esquerdo no <strong>Win</strong> e o indicador direito no <strong>L</strong>.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 10" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 10: Tela Bloqueada com Tecla Win+L e Pendrive Bloqueado -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Monitor do Computador -->
+                <rect x="110" y="60" width="280" height="180" rx="12" fill="#0f172a" stroke="#334155" stroke-width="6" />
+                <rect x="120" y="70" width="260" height="160" rx="6" fill="#1e293b" />
+                
+                <!-- Base do Monitor -->
+                <rect x="235" y="240" width="30" height="40" fill="#334155" />
+                <rect x="190" y="275" width="120" height="12" rx="4" fill="#475569" />
+
+                <!-- Tela de Bloqueio com Cadeado Central -->
+                <circle cx="250" cy="135" r="28" fill="#0c4a6e" stroke="#06b6d4" stroke-width="2" class="anim-pulse" />
+                <rect x="242" y="130" width="16" height="14" rx="2" fill="#38bdf8" />
+                <path d="M245 130 V123 C245 120 255 120 255 123 V130" fill="none" stroke="#38bdf8" stroke-width="2" />
+                <text x="250" y="180" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">SESSÃO BLOQUEADA</text>
+                <text x="250" y="200" fill="#38bdf8" font-size="10" font-weight="600" text-anchor="middle">ATALHO RÁPIDO: WIN + L</text>
+
+                <!-- Pendrive Não Autorizado Barrado -->
+                <g transform="translate(140, 340)">
+                  <rect x="0" y="0" width="70" height="26" rx="4" fill="#334155" stroke="#64748b" stroke-width="1.5" />
+                  <rect x="70" y="5" width="18" height="16" fill="#cbd5e1" />
+                  <line x1="75" y1="9" x2="80" y2="9" stroke="#64748b" stroke-width="2" />
+                  <line x1="75" y1="17" x2="80" y2="17" stroke="#64748b" stroke-width="2" />
+                  <text x="35" y="17" fill="#94a3b8" font-size="9" font-weight="700" text-anchor="middle">USB DRIVE</text>
+                </g>
+
+                <!-- Escudo de Bloqueio Vermelho sobre USB -->
+                <g transform="translate(250, 350)">
+                  <circle cx="0" cy="0" r="24" fill="#7f1d1d" stroke="#ef4444" stroke-width="2" class="anim-pulse" />
+                  <line x1="-10" y1="-10" x2="10" y2="10" stroke="#fca5a5" stroke-width="3" stroke-linecap="round" />
+                  <line x1="10" y1="-10" x2="-10" y2="10" stroke="#fca5a5" stroke-width="3" stroke-linecap="round" />
+                </g>
+                <text x="320" y="355" fill="#f87171" font-size="11" font-weight="700">MÍDIA BARRADA</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 11: O QUE FAZER EM CASO DE INCIDENTE
+         ========================================== -->
+    <section class="slide" id="slide-11" data-index="11">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 10 • Resposta Imediata
+          </div>
+          <h2 class="slide-title">
+            O que Fazer em <span class="gradient-text">Caso de Incidente?</span>
+          </h2>
+          <p class="slide-subtitle">
+            Clicou em um link duvidoso, abriu anexo estranho ou suspeita de invasão? Aja com agilidade e total transparência.
+          </p>
+          </div>
+
+          <div class="cards-grid-2">
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/></svg></div>
+                <div class="card-title">1. Desconecte da Rede Já</div>
+              </div>
+              <p class="card-desc">Retire o cabo de rede ethernet e desligue o Wi-Fi imediatamente. Isso isola o equipamento e evita a propagação na empresa.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+                <div class="card-title">2. Não Desligue a Máquina</div>
+              </div>
+              <p class="card-desc">A menos que instruído pela TI, mantenha o PC ligado. Evidências cruciais do ataque residem na memória RAM volátil.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div class="card-title">3. Avise a TI / Segurança Imediatamente</div>
+              </div>
+              <p class="card-desc">Contate os canais oficiais de socorro cibernético. Descreva o que aconteceu com precisão (qual link ou anexo foi acessado).</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-header-line">
+                <div class="card-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></div>
+                <div class="card-title">4. Cultura Sem Culpa</div>
+              </div>
+              <p class="card-desc">Erros acontecem! Omitir um incidente por medo de repreensão piora gravemente as perdas. A comunicação rápida salva a organização.</p>
+            </div>
+          </div>
+
+          <div class="alert-callout danger">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span><strong>Tempo é Crítico:</strong> Quanto mais rápido a equipe de resposta atuar, menor será o vazamento de dados e o dano aos sistemas.</span>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 11" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 11: Fluxo de Resposta Imediata a Incidentes -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Etapa 1: Desconectar Cabo de Rede -->
+                <g transform="translate(150, 110)">
+                  <circle cx="0" cy="0" r="38" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5" />
+                  <path d="M-10 -15 L-10 0 M10 -15 L10 0 M-14 0 H14 V12 H-14 Z" fill="none" stroke="#fbbf24" stroke-width="2" />
+                  <line x1="-12" y1="-12" x2="12" y2="12" stroke="#ef4444" stroke-width="3" />
+                  <text x="0" y="52" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">1. DESCONECTAR</text>
+                </g>
+
+                <!-- Seta 1 para 2 -->
+                <line x1="195" y1="110" x2="275" y2="110" stroke="#06b6d4" stroke-width="3" stroke-dasharray="6 4" class="anim-flow" />
+
+                <!-- Etapa 2: Preservar Estado da Máquina -->
+                <g transform="translate(320, 110)">
+                  <circle cx="0" cy="0" r="38" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" />
+                  <rect x="-14" y="-12" width="28" height="20" rx="3" fill="none" stroke="#38bdf8" stroke-width="2" />
+                  <line x1="-18" y1="12" x2="18" y2="12" stroke="#38bdf8" stroke-width="2" />
+                  <circle cx="0" cy="-2" r="3" fill="#10b981" />
+                  <text x="0" y="52" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">2. MANTER LIGADO</text>
+                </g>
+
+                <!-- Seta 2 para 3 -->
+                <path d="M320 155 V225 H275" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="6 4" class="anim-flow" />
+
+                <!-- Etapa 3: Acionar Equipe de TI e SOC -->
+                <g transform="translate(230, 260)">
+                  <circle cx="0" cy="0" r="42" fill="#0c4a6e" stroke="#10b981" stroke-width="3" filter="url(#glow-cyan)" class="anim-pulse" />
+                  <path d="M-10 -8 C-10 -14 10 -14 10 -8 V5 H-10 Z" fill="none" stroke="#f8fafc" stroke-width="2" />
+                  <circle cx="0" cy="10" r="2" fill="#f8fafc" />
+                  <path d="M-16 0 C-18 -4 -18 -10 -14 -14 M16 0 C18 -4 18 -10 14 -14" stroke="#34d399" stroke-width="2" stroke-linecap="round" />
+                  <text x="0" y="56" fill="#34d399" font-size="11" font-weight="800" text-anchor="middle">3. ACIONAR O SOC / TI</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 12: RESUMO E CONCLUSÃO
+         ========================================== -->
+    <section class="slide" id="slide-12" data-index="12">
+      <div class="slide-body">
+        <div class="content-col">
+          <div class="slide-header-block">
+            <div class="slide-category">
+            <span></span> Módulo 11 • Síntese & Compromisso
+          </div>
+          <h2 class="slide-title">
+            A Segurança Começa <span class="gradient-text">em Você!</span>
+          </h2>
+          <p class="slide-subtitle">
+            A tecnologia ergue muralhas, mas a consciência humana é a chave que mantém a porta trancada contra ameaças.
+          </p>
+          </div>
+
+          <div class="checklist-group">
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Senhas Longas + Cofre + 2FA Ativo</strong>
+                <p>Nenhuma senha repetida, frases secretas e verificação em duas etapas em tudo.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Desconfiança Saudável com Links e E-mails</strong>
+                <p>Verifique o remetente, inspecione a URL e nunca caia na pressão de falsas urgências.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Mesa Limpa & Tela Bloqueada (Win + L)</strong>
+                <p>Espaço físico seguro e computadores protegidos contra olhares curiosos.</p>
+              </div>
+            </div>
+
+            <div class="check-item">
+              <div class="check-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div>
+                <strong>Comunicação Transparente e Rápida</strong>
+                <p>Suspeitou de algo? Desconecte da rede e avise a equipe de TI imediatamente.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-actions-row">
+            <button class="brand-badge action-pill" data-action="restart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+              <span>Reiniciar Apresentação ↺</span>
+            </button>
+            <button class="brand-badge action-pill secondary" data-action="overview">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span>Ver Grade Completa ▦</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="visual-col">
+          <div class="visual-container">
+            <img class="slide-custom-image" alt="Ilustração do Slide 12" />
+            <button class="media-toggle-pill"></button>
+            <div class="svg-illustration">
+              <!-- SVG Slide 12: Troféu de Conscientização e Selo de Certificação -->
+              <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Brilho Dourado / Ciano -->
+                <circle cx="250" cy="200" r="140" fill="url(#grad-shield-glow)" class="anim-pulse" />
+
+                <!-- Selo Circular de Conclusão -->
+                <circle cx="250" cy="180" r="100" fill="#0f172a" stroke="#10b981" stroke-width="4" filter="url(#glow-cyan)" />
+                <circle cx="250" cy="180" r="88" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 6" class="anim-rotate" />
+
+                <!-- Troféu Cibernético no Centro -->
+                <g transform="translate(250, 175)">
+                  <!-- Taça -->
+                  <path d="M-30 -40 H30 V-15 C30 15 -30 15 -30 -15 Z" fill="#f59e0b" stroke="#fbbf24" stroke-width="2" />
+                  <!-- Alças -->
+                  <path d="M-30 -35 H-45 C-45 -10 -30 -5 -30 -5" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+                  <path d="M30 -35 H45 C45 -10 30 -5 30 -5" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+                  <!-- Haste e Base -->
+                  <rect x="-6" y="10" width="12" height="20" fill="#d97706" />
+                  <rect x="-24" y="30" width="48" height="10" rx="3" fill="#f59e0b" />
+                  <!-- Estrela Central -->
+                  <polygon points="0,-22 4,-10 16,-10 7,-2 10,10 0,2 -10,10 -7,-2 -16,-10 -4,-10" fill="#fef3c7" />
+                </g>
+
+                <!-- Faixa comemorativa -->
+                <g transform="translate(250, 315)">
+                  <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#064e3b" stroke="#10b981" stroke-width="2" />
+                  <text x="0" y="5" fill="#a7f3d0" font-size="12" font-weight="800" text-anchor="middle">★ COLABORADOR CONSCIENTE 2026 ★</text>
+                </g>
+
+                <!-- Partículas de Sucesso Flutuantes -->
+                <circle cx="160" cy="100" r="4" fill="#38bdf8" class="anim-float" />
+                <circle cx="340" cy="100" r="4" fill="#10b981" class="anim-float" style="animation-delay: 0.3s" />
+                <circle cx="130" cy="240" r="3" fill="#f59e0b" class="anim-float" style="animation-delay: 0.6s" />
+                <circle cx="370" cy="240" r="3" fill="#06b6d4" class="anim-float" style="animation-delay: 0.9s" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Barra de Controles Flutuante Inferior (Dock) -->
+  <footer class="bottom-dock">
+    <div class="dock-controls">
+      <button class="dock-btn" id="btn-prev" title="Slide Anterior (←)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+
+      <div class="dock-counter">
+        <span class="current-num">01</span> / <span class="total-num">12</span>
+      </div>
+
+      <button class="dock-btn" id="btn-next" title="Próximo Slide (→)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="dock-divider"></div>
+
+    <div class="dock-dots" id="dock-dots-container">
+      <!-- Gerado dinamicamente pelo JS -->
+    </div>
+  </footer>
+
+  <!-- Modal de Visão Geral (Overview Grid) -->
+  <div class="modal-overlay" id="overview-modal">
+    <div class="overview-content">
+      <div class="overview-header">
+        <h3>Índice e Grade de Slides</h3>
+        <button class="close-modal-btn" id="close-overview-btn" title="Fechar (Esc)">✕</button>
+      </div>
+      <div class="overview-grid" id="overview-grid">
+        <!-- Preenchido dinamicamente pelo JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Ajuda e Atalhos -->
+  <div class="modal-overlay" id="help-modal">
+    <div class="overview-content" style="max-width: 650px;">
+      <div class="overview-header">
+        <h3>Atalhos e Dicas de Navegação</h3>
+        <button class="close-modal-btn" id="close-help-btn" title="Fechar (Esc)">✕</button>
+      </div>
+
+      <div class="shortcuts-grid">
+        <div class="shortcut-row">
+          <span>Próximo Slide</span>
+          <div>
+            <span class="shortcut-key">→</span>
+            <span class="shortcut-key">Espaço</span>
+            <span class="shortcut-key">PgDn</span>
+          </div>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Slide Anterior</span>
+          <div>
+            <span class="shortcut-key">←</span>
+            <span class="shortcut-key">Backspace</span>
+            <span class="shortcut-key">PgUp</span>
+          </div>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Tela Cheia</span>
+          <span class="shortcut-key">F</span>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Grade de Miniaturas</span>
+          <span class="shortcut-key">G</span> ou <span class="shortcut-key">O</span>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Primeiro / Último Slide</span>
+          <div>
+            <span class="shortcut-key">Home</span>
+            <span class="shortcut-key">End</span>
+          </div>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Pular para Slide Direto</span>
+          <span class="shortcut-key">1</span> a <span class="shortcut-key">9</span>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Alternar Modo Claro/Escuro</span>
+          <span class="shortcut-key">T</span>
+        </div>
+
+        <div class="shortcut-row">
+          <span>Dispositivos Móveis e Touch</span>
+          <span class="shortcut-key">Deslizar (Swipe)</span>
+        </div>
+      </div>
+
+      <div class="alert-callout tip">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        <span>Para personalizar qualquer slide com uma foto ou ilustração externa, basta salvar uma imagem com o nome <strong>slide-01.png</strong> (ou .jpg) até <strong>slide-12.png</strong> na pasta <strong>imagens/</strong>. O slide detecta e exibe automaticamente!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Card Ampliado (Zoom Modal) -->
+  <div class="card-modal-overlay" id="card-zoom-modal" aria-hidden="true">
+    <div class="card-modal-container" id="card-zoom-container">
+      <button class="card-modal-close" id="card-zoom-close-btn" title="Fechar (Esc ou clique fora)" aria-label="Fechar card ampliado">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="card-modal-content" id="card-zoom-content">
+        <!-- Conteúdo do card ampliado inserido dinamicamente via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/presentation.js"></script>
+</body>
+</html>
+
